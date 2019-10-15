@@ -1,6 +1,6 @@
 '''
 test_toys.py
-
+print("hi")
 Unit tests for toy functions.
 '''
 
