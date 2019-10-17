@@ -1,4 +1,4 @@
-Print("hey there!")
+Print("hello there!")
 
 number = int(input('please guess a number: '))
 if number == 4:
