@@ -9,7 +9,7 @@ with functions.
 # write a function that adds 1
 # to the input and prints the result
 def inc(a):
-    print(a)
+    print(a+1)
 
 
 # write a function that adds 1
@@ -51,3 +51,4 @@ def string_repeat(phrase, repeat):
     # in order to concatenate them
     return
 
+print("hi there!")
