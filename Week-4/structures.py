@@ -8,8 +8,14 @@ Simple functions performing operations on basic Python data structures.
 
 # write a function that returns a list containig the first and the last element
 # of "the_list". 
-def first_and_last(the_list):
-    return []
+the_list = [1, 2, 3, 4, 5]
+
+def first_and_last(the_list =[1,2,3]):
+    first = the_list[0]
+    last = the_list[-1]
+    return [first, last]
+
+print(first_and_last(the_list))
 
 
 # write a function that returns part of "the_list" between indices given by the
@@ -18,6 +24,8 @@ def first_and_last(the_list):
 # If "end" is greater then "beginning" or any og the indices is out of the
 # list, raise a "ValueError" exception. 
 def part_reverse(the_list, beginning, end):
+    beginning = 1
+    end = 5
     return # hint this is incomplete
 
 

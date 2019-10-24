@@ -10,16 +10,20 @@ with functions.
 # write a function that adds 1
 # to the input and prints the result
 
-def add(val1):
+def inc(val1):
     result = val1 + 1
+    print(result)
     return result
 
-print(add(3))
+
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
-    return # hint this is incomplete
+    result = a + 1
+    return result # hint this is incomplete
+
+print(inc_return(3))
 
 
 # write a function that adds
@@ -28,6 +32,7 @@ def inc_return(a):
 def sum(a, b):
     result = a + b
     return result
+
 print(sum(3, 4))
 
 
@@ -36,8 +41,9 @@ print(sum(3, 4))
 # sum() and then increments the sum
 # using inc_return
 def sum_inc(a, b):
-    result = sum(a + b)
-    inc_return result
+    result = sum(a, b)
+    result1 = inc_return(result)
+    return result1
 
 print(sum_inc(4, 6))
 
@@ -47,7 +53,7 @@ print(sum_inc(4, 6))
 # boolean (True or False) for whether 
 # the input number is even
 def is_even(a):
-    return
+    return a%2 == 0
 
 
 # create for loop that takes a string
@@ -59,6 +65,7 @@ def is_even(a):
 def string_repeat(phrase, repeat):
     # hint: you can add strings together 
     # in order to concatenate them
-    return
+    result = (phrase * repeat)
+    return result
 
-print("hi there!")
+print(string_repeat("hello", 3))
