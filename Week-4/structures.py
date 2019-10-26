@@ -23,25 +23,42 @@ print(first_and_last(the_list))
 # reverse order than in the original "the_list". 
 # If "end" is greater then "beginning" or any og the indices is out of the
 # list, raise a "ValueError" exception. 
-def part_reverse(the_list, beginning, end):
-    beginning = 1
-    end = 5
-    return # hint this is incomplete
+def part_reverse():
+    the_list = [1, 2, 3, 4, 5]
+    beginning = the_list[0]
+    end = the_list[-1]
+    result = (end, beginning)
+    try:
+        if end > beginning:
+            print("This should be the case")
+        else:
+            print("Please check the code again!")
+    except ValueError as err:
+        print("there is a ValueError!")
+    return result
+    #the_list, beginning, end
+print(part_reverse()) 
+# hint this is incomplete
 
 
 # write a function that at the "index" of "the_list" inserts three times the
 # same value. For example if the_list = [0,1,2,3,4] and index = 3 the function
 # will return [0,1,2,3,3,3,4]. 
 def repeat_at_index(the_list, index):
-    return
+    the_list.insert(the_list.index(index), index)
+    the_list.insert(the_list.index(index), index) 
+    return the_list
+    
+list1 = [1, 2, 3, 4, 5]
+ind1 = 2
+
+print(repeat_at_index(list1, ind1))
 
 
 # Strings
 
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
-def palindrome_word(word):
-    return
 
 # write a function that checks whether the sentence is a palindrome, i.e. it
 # read the same forward and backward. Ignore all spaces and other characters
