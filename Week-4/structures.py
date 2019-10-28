@@ -37,8 +37,7 @@ def part_reverse():
         print("there is a ValueError!")
     return result
     #the_list, beginning, end
-print(part_reverse()) 
-# hint this is incomplete
+print(part_reverse())  # hint this is incomplete
 
 
 # write a function that at the "index" of "the_list" inserts three times the
@@ -59,18 +58,26 @@ print(repeat_at_index(list1, ind1))
 
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
+def palindrome_word():
+    word = "hello"
+    if word == word[::-1]:
+        print("this is a palindrome")
+    else:
+        print("this is not a palindrome")
+    return None
 
+print(palindrome_word())
 # write a function that checks whether the sentence is a palindrome, i.e. it
 # read the same forward and backward. Ignore all spaces and other characters
 # like fullstops, commas, etc. Also do not consider whether the letter is
 # capital or not. 
 def palindrome_sentence():
-    sentence = "lolol"
-    if sentence == sentence.reverse():
-        print: ("this is a palindrome")
+    sentence = "hello olleh"
+    if sentence == sentence[::-1]:
+        print("this is a palindrome")
     else:
         print("this is not a palindrome")
-    return
+    return 
 
 print(palindrome_sentence())
 
@@ -81,8 +88,14 @@ print(palindrome_sentence())
 # the end.  The concatenated sentence must have no white space at the beginning
 # or at the end and the must be exactly one space after the end of the first
 # sentence. 
-def concatenate_sentences(sentenece1, sentence2):
+def concatenate_sentences():
+    sentence1 = "Hi my name is Julian."
+    sentence2 = " I am 21 yrs old"
+    if sentence1.capitalize() and "." or "?" or "!" in sentence1:
+        print(sentence1 + sentence2)
     return
+
+print(concatenate_sentences())
 
 
 # Dictionaries
@@ -90,14 +103,39 @@ def concatenate_sentences(sentenece1, sentence2):
 # write a function that checks whether there is a record with given key in the
 # dictionary. Return True or False.
 def index_exists(dictionary, key):
-    return
+    for keyy in dictionary.keys():
+        if keyy == key:
+            return True
+        else:
+            continue
+    return False
+
+print(index_exists({"name": "cock",
+"age": "sucker",
+"home": "youre mums house"
+},"name"))
 
 # write a function which checks whether given value is stored in the
 # dictionary. Return True or False.
 def value_exists(dictionary, value):
-    return
+    for valuee in dictionary.values():
+        if valuee == value:
+            return True
+        else:
+            continue
+    return False
+
+print(value_exists({"name": "cock",
+"age": "sucker",
+"home": "youre mums house"
+},"cock"))
 
 # write a function that returns a new dictionary which contains all the values
 # from dictionary1 and dictionary2.
 def merge_dictionaries(dictionary1, dictionary2):
-    return
+    '''Combines two dictionaries'''
+    dict1 = dictionary1
+    for key,value in dictionary2.items():
+        dict1[key] = value
+    return dict1
+
