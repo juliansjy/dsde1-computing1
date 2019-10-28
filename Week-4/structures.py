@@ -64,8 +64,15 @@ print(repeat_at_index(list1, ind1))
 # read the same forward and backward. Ignore all spaces and other characters
 # like fullstops, commas, etc. Also do not consider whether the letter is
 # capital or not. 
-def palindrome_sentence(sentence):
+def palindrome_sentence():
+    sentence = "lolol"
+    if sentence == sentence.reverse():
+        print: ("this is a palindrome")
+    else:
+        print("this is not a palindrome")
     return
+
+print(palindrome_sentence())
 
 # write a function that concatenates two sentences. First the function checks
 # whether the sentence meets the following criteria: it starts with a capital
